@@ -4,6 +4,7 @@ const TodoInput = ({todos}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     todos(value)
+    setValue("")
   };
   return (
     <div className="main">
@@ -15,7 +16,6 @@ const TodoInput = ({todos}) => {
           placeholder="Add Todo's."
         ></input>
         <button type="submit">Add</button>
-        {console.log("hello")}
       </form>
     </div>
   );
